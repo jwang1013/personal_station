@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ramdom Quote Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class ="container-fluid text-center">
+        <h1 id="title">Random Quote Generator</h1>
+        </br>
+      <div class = "row buttons">
+        <button class="btn btn-default" type="submit" id="newQuote">New  Quote</button>
+        <a class ="button" id="twitter" title = "Tweet this quote!"><i class="fa fa-twitter-square" id = "twitterIcon"></i></a>
+        <a class="button" id="tumblrIcon" title="Post this quote on tumblr!" target="_blank"><i class="fa fa-tumblr-square"></i>
+              </a>
+      
+      </div>
+        <div class ="quotes text-center">
+          <span id="quote"></span>
+          </br>
+      <div class = "row">
+        <div class = "col-md-6"></div>
+          <div class = "col-md-6">
+            <span class="author "></span>
+        </div>
+      </div>
+        </div>
+      </br>
+      
+      
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>

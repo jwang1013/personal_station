@@ -1,0 +1,1 @@
+<?php include_once("../personal_page/index.html"); ?>
