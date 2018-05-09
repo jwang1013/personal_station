@@ -33,7 +33,7 @@ app.use('/', function(req, res){
     res.sendFile(process.cwd()+'/personal_page/index.html');
 });
 
-app.use('/p_p', express.static(process.cwd()+'/personal_page'));
+app.use('/p_p', express.static(process.cwd()+'/personal_page/public'));
 app.use('/r_q',express.static(process.cwd()+'/random_quote'));
 app.use('/s_g',express.static(process.cwd()+'/simon_game'));
 app.use('/p_c',express.static(process.cwd()+'/pomodoro_clock'));
