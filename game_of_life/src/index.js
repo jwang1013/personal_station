@@ -39,16 +39,6 @@ function RunButton(props) {
 	  this.props.pauseGame();
 	}
 	
-	
-	
-	// pauseGame() {
-	//   this.props.pauseGame();
-	// }
-	// runGame() {
-	//   if (this.props.aliveCount > 0) {
-	//    this.props.runGame();
-	//   }
-	// }
 	clearBoard() {
 	  this.setState({isRun: false});
 	  this.props.clearGame(true);
@@ -202,9 +192,7 @@ function RunButton(props) {
 	  // example: aliveStates['0,0'] = 1 (true);
 	  this.resetBoard();
 	}
-  //   componentDidMount() {
-	  
-  //   }
+
 	resetBoard(clearSquares = false) {
 	  clearTimeout(this.timeO);
 	  let aliveStates = {}
@@ -543,15 +531,3 @@ function RunButton(props) {
   ReactDOM.render(
 	<Game />, document.getElementById('container')
   );
-  
-  
-   // <BottomMenu
-				  // 	width={this.state.numCols * this.state.squareSize * 5 / 6}
-				  // 	slow={this.slow}
-				  // 	medium={this.medium}
-				  // 	fast={this.fast}	
-				  // 	// gridSize={this.gridSize}
-				  // 	gridSizeS={this.gridSizeS}
-				  // 	gridSizeM={this.gridSizeM}
-				  // 	gridSizeL={this.gridSizeL}
-				  // />
