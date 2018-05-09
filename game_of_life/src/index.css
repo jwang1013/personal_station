@@ -1,0 +1,186 @@
+body {
+  background: -webkit-radial-gradient(center, circle, #ed4242 20%, black);
+  background: -moz-radial-gradient(center, circle, #ed4242 20%, black);
+  background: -ms-radial-gradient(center, circle, #ed4242 20%, black);
+  background: -o-radial-gradient(center, circle, #ed4242 20%, black);
+  background: radial-gradient(center, circle, #ed4242 20%, black);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: grey;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-family: courier;
+  color: white;
+}
+
+#container {
+  width: 850px;
+  height: 510px;
+  margin: 180px auto 40px;
+  text-align: center;
+}
+
+#game {
+  background: black;
+  margin: 20px auto 40px;
+  position: relative;
+  border: 15px solid #323232;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.top-controls {
+  position: relative;
+  margin: 0 auto;
+  min-width: 500px;
+  height: 50px;
+  background: #3c3c3c;
+  position: absolute;
+  text-align: left;
+  padding-bottom: 10px;
+  top: -75px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-right: 3px solid #323232;
+  border-left: 3px solid #323232;
+  border-top: 3px solid #323232;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+.top-controls .control-button {
+  background: #141414;
+  color: white;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+  top: 12px;
+  left: 10px;
+  margin: 0 3px;
+  padding: 10px 15px;
+  border: 1px solid #008c82;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.top-controls .control-button:focus {
+  outline: none;
+}
+.top-controls .sd-btn {
+  background: #1051a5;
+  border: 0px;
+}
+.top-controls .sd-btn:active {
+  background: rgba(16, 81, 165, 0.6);
+  outline: none;
+}
+.top-controls .clr-btn {
+  background: #d84329;
+  border: 0px;
+}
+.top-controls .clr-btn:active {
+  background: rgba(216, 67, 41, 0.6);
+  outline: none;
+}
+.top-controls .run-btn {
+  background: #0f633d;
+  border: 0px;
+}
+.top-controls .run-btn:active {
+  background: rgba(15, 99, 61, 0.6);
+}
+.top-controls .pause-btn {
+  background: #8c770f;
+  border: 0px;
+}
+.top-controls .pause-btn:active {
+  background: rgba(140, 119, 15, 0.6);
+}
+.top-controls .generations {
+  position: relative;
+  left: 305px;
+  bottom: 20px;
+  color: #e6e6e6;
+  font-size: 1.3rem;
+}
+
+.bottom-controls {
+  position: absolute;
+  bottom: -125px;
+  margin: 0 auto;
+  margin-right: 20px;
+  width: 400px;
+  height: 100px;
+  background: #3c3c3c;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 3px solid #323232;
+  border-left: 3px solid #323232;
+  border-top: 3px solid #323232;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+.bottom-controls .control-button {
+  color: white;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+  top: -5px;
+  left: 120px;
+  margin: 0 3px;
+  padding: 5px 15px;
+  border: 1px solid #ff6b6b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bottom-controls .control-button:focus {
+  outline: none;
+}
+.bottom-controls .control-button1 {
+  color: white;
+  font-size: 1.1rem;
+  position: relative;
+  display: inline-block;
+  top: -8px;
+  left: 122px;
+  margin: 0 3px;
+  padding: 5px 15px;
+  border: 1px solid #ff6b6b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bottom-controls .control-button1:focus {
+  outline: none;
+}
+.bottom-controls .bs {
+  position: relative;
+  left: 10px;
+  bottom: -20px;
+  color: #e6e6e6;
+  font-size: 1.3rem;
+}
+
+h3 {
+  position: absolute;
+}
+
+.person {
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid #282828;
+  display: block;
+  float: left;
+  margin-top: 0;
+  margin: 0;
+}
+
+.active {
+  background: #821e28;
+}
+
+/*# sourceMappingURL=index.css.map */

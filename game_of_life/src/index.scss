@@ -1,0 +1,184 @@
+$body-color: rgba(237, 66, 66, 1);
+body {
+  background: -webkit-radial-gradient(center, circle, $body-color 20%, rgba(0,0,0,1));
+  background: -moz-radial-gradient(center, circle, $body-color 20%, rgba(0,0,0,1));
+  background: -ms-radial-gradient(center, circle, $body-color 20%, rgba(0,0,0,1));  
+  background: -o-radial-gradient(center, circle, $body-color 20%, rgba(0,0,0,1)); 
+  background: radial-gradient(center, circle, $body-color 20%, rgba(0,0,0,1));
+}
+
+header {
+	position: fixed;
+	top: 0;
+	background: grey;
+	width: 100%;
+	padding: 5px;
+	height: 40px;
+	text-align: center;
+	font-size: 30px;
+	font-family: courier;
+	color: white;
+}
+
+#container {
+  width: 850px;
+  height: 510px;
+  margin: 180px auto 40px;
+  text-align: center;
+}
+
+#game {
+  background: black;
+  margin: 20px auto 40px;
+  position: relative;
+  border: 15px solid rgba(50,50,50,1);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.5), 0 -5px 20px rgba(0,0,0,.3);
+}
+
+.top-controls {
+  position: relative;
+  margin: 0 auto;
+  min-width: 500px;
+  height: 50px;
+  background: rgba(60,60,60,1);
+  position: absolute;
+  text-align: left;
+  padding-bottom: 10px;
+  top: -75px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-right: 3px solid rgba(50,50,50,1);
+  border-left: 3px solid rgba(50,50,50,1);
+  border-top: 3px solid rgba(50,50,50,1);
+  box-shadow: 0 -5px 20px rgba(0,0,0,.3);
+  .control-button {
+    background: rgba(20,20,20, 1);
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    top: 12px;
+    left: 10px;
+    margin: 0 3px;
+    padding: 10px 15px;
+    border: 1px solid rgba(0,140,130, 1);
+    border-radius: 10px;
+    cursor: pointer;   
+    &:focus {
+      outline: none;
+    }
+  }
+  .sd-btn{
+    background: rgba(16, 81, 165, 1);
+    border: 0px;
+    &:active {
+      background: rgba(16, 81, 165, 0.6);
+      outline: none;
+    }
+  }
+  .clr-btn{
+    background: rgba(216, 67, 41, 1);
+    border: 0px;
+    &:active {
+      background: rgba(216, 67, 41, 0.6);
+      outline: none;
+    }
+  }
+  .run-btn {
+    background: rgba(15, 99, 61, 1);
+    border: 0px;
+    &:active {
+      background: rgba(15, 99, 61, 0.6);
+    }
+  }
+  .pause-btn {
+    background: rgba(140, 119, 15, 1);
+    border: 0px;
+      &:active {
+      background: rgba(140, 119, 15, 0.6);
+    }
+  }
+  .generations {
+    position: relative;
+    left: 305px;
+    bottom: 20px;
+    color: rgba(230, 230, 230, 1);
+    font-size: 1.3rem;
+  }
+}
+
+  .bottom-controls {
+  position: absolute;
+  bottom: -125px;
+  margin: 0 auto;
+  margin-right: 20px;
+  width: 400px;
+  height: 100px;
+  background: rgba(60,60,60,1);
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 3px solid rgba(50,50,50,1);
+  border-left: 3px solid rgba(50,50,50,1);
+  border-top: 3px solid rgba(50,50,50,1);
+  box-shadow: 0 -5px 20px rgba(0,0,0,.3);
+  .control-button {
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    top: -5px;
+    left: 120px;
+    margin: 0 3px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 107, 107, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+   .control-button1 {
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    top: -8px;
+    left: 122px;
+    margin: 0 3px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 107, 107, 1);
+    border-radius: 10px;
+    cursor: pointer;
+     &:focus {
+      outline: none;
+    }
+  }
+    .bs {
+    position: relative;
+    left: 10px;
+    bottom: -20px;
+    color: rgba(230, 230, 230, 1);
+    font-size: 1.3rem;
+  }
+}
+
+h3 {
+  position: absolute;
+}
+
+.person {
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid rgba(40,40,40,1);
+  display: block;
+  float: left;
+  margin-top: 0;
+  margin: 0;
+}
+.active {
+    background: rgba(130, 30, 40, 1);
+}
