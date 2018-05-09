@@ -28,7 +28,7 @@ app.use('/game_of_life', function(req, res){
     res.sendFile(process.cwd()+'/game_of_life/public/index.html');
 });
 
-app.use('/', function(req, res){
+app.get('/', function(req, res){
     console.log('homepage is visited');
     res.sendFile(process.cwd()+'/personal_page/index.html');
 });
