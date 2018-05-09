@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import '/g_l/src/index.css';
 
 function RunButton(props) {
 	return (
