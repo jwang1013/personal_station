@@ -84,8 +84,6 @@ $(document).ready(function() {
         countLama = clock.getTime();
         posLama = $("#stats").html();
       }
-      console.log("countLama = " + countLama);
-      console.log("posLama = " + posLama);
     });
     $("#clear").on("click", function() {
       inSession = false;
