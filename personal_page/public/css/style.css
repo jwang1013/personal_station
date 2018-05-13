@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
@@ -251,18 +252,28 @@ header .intro-text {
   /* IE6-9 */
   background: linear-gradient(to top, rgba(5, 55, 64, 0.8) 20%, rgba(5, 55, 64, 0.1) 100%);
 }
-
 #about .about-text {
   margin-left: 10px;
 }
-
 #about img {
   float: right;
 }
-
 #about p {
   margin-bottom: 30px;
   line-height: 21px;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+}
+#about #name {
+  color: #318eaa;
+  font-weight: 250;
+  font-size: 35px;
+}
+#about #key-words {
+  color: #0f3d10;
+  font-weight: 180;
+  font-size: 25px;
 }
 
 /* Skills Section */
@@ -906,115 +917,186 @@ ol.type li a:hover {
   color: #e87e04;
 }
 
-/* Exp Section */
-.timeline__itemTitle {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+/* Experience Section */
+#experience {
+  padding: 100px 0;
+  color: rgba(255, 255, 255, 0.9);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
+  background: #20a6bb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #000 0%, #283048 40%, #55679a 80%, #9298af);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #000 0%, #283048 40%, #55679a 80%, #9298af);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(top, #000 0%, #283048 40%, #55679a 80%, #9298af);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#20a6bb", endColorstr="#25bad0", GradientType=0 );
+  /* IE6-9 */
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 }
-
-.timeline__itemDescription {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+#experience #e-h1 {
+  margin-top: 15px;
+  font-size: 1em;
+  color: white;
 }
-
-.timeline {
-  margin: 0 auto;
-  padding: 4rem 0 4rem 0;
-  max-width: 600px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+#experience #e-h2 {
+  font-size: 0.9em;
+  color: orange;
 }
-.timeline::after {
-  display: block;
+#experience #e-h3 {
+  font-size: 0.8em;
+  color: #efd775;
+  margin-top: 5px;
+}
+#experience p {
+  margin-top: 20px;
+}
+#experience .timeline ul {
+  padding: 30px 0;
+}
+#experience .timeline ul:before {
   content: "";
+  border-left: 5px solid #c17e20;
+  left: -0.25em;
+  top: 2em;
+  height: 100%;
   position: absolute;
-  top: 0;
-  bottom: 100%;
-  left: 50%;
-  transition: bottom 1000ms;
-  transform: translateX(-50%);
-  z-index: -1;
-  background-color: #000;
-  width: 0.6rem;
-}
-.timeline.timeline--show::after {
   bottom: 0;
+  top: 0;
+  transform-origin: 0 0;
+  animation: scaleVertical 3s 1s ease both 1;
 }
-
-.timeline__item {
-  display: block;
-  width: calc(50% - (0.6rem / 2));
-  position: relative;
-}
-.timeline__item::before {
+#experience .timeline ul:after {
   content: "";
-  display: block;
+  clear: both;
   position: absolute;
-  top: 1.5rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  background: #FF0000;
+  bottom: 0px;
+  left: -1em;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  transform: scale(0);
+  background: none repeat scroll 0% 0% #f7a32e;
+  border: 5px solid #DDD;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  animation: revealScaleUp 0.75s 2.82s ease both 1;
 }
-.timeline--show .timeline__item::before {
-  animation: circleScaling 500ms 1500ms forwards;
+#experience .timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 8px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
 }
-.timeline__item:not(:last-child) {
-  margin-bottom: 4rem;
+#experience .timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  animation: revealScaleUp 0.75s 2.82s ease both 1;
 }
-.timeline__item:nth-child(odd) {
-  align-self: flex-end;
-  padding-left: 2rem;
-  text-align: left;
+#experience .timeline ul li #e-div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  border-color: white;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 5px;
 }
-.timeline__item:nth-child(odd)::before {
-  left: -1.2rem;
+#experience .timeline ul li #e-div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
-.timeline__item:nth-child(even) {
-  align-self: flex-start;
-  padding-right: 2rem;
-  text-align: right;
+#experience .timeline ul li:nth-child(odd) #e-div {
+  left: 56px;
 }
-.timeline__item:nth-child(even)::before {
-  right: -1.2rem;
+#experience .timeline ul li:nth-child(odd) #e-div::before {
+  left: -22px;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #fff transparent transparent;
 }
-
-.timeline__itemTitle {
-  font-size: 3.2rem;
-  line-height: 1.5;
-  margin: 0 0 1.2rem 0;
+#experience .timeline ul li:nth-child(even) #e-div {
+  left: -449px;
 }
-
-.timeline__itemDescription {
-  font-size: 1.6rem;
-  margin: 0;
+#experience .timeline ul li:nth-child(even) #e-div::before {
+  right: -22px;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
 }
-
-.timeline__itemTitle,
-.timeline__itemDescription {
+#experience time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#experience .timeline ul li::after {
+  transition: background 1s ease-in-out;
+}
+#experience .timeline ul li.in-view::after {
+  background: #d17d08;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+}
+#experience .timeline ul li #e-div {
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 800ms;
+  transition: all 1s ease-in-out;
 }
-.timeline--show .timeline__itemTitle,
-.timeline--show .timeline__itemDescription {
+#experience .timeline ul li:nth-child(odd) #e-div {
+  transform: translate3d(200px, 0, 0);
+}
+#experience .timeline ul li:nth-child(even) #e-div {
+  transform: translate3d(-200px, 0, 0);
+}
+#experience .timeline ul li.in-view #e-div {
+  transform: none;
+  visibility: visible;
   opacity: 1;
-  transition-delay: 2500ms;
+}
+@media screen and (max-width: 900px) {
+  #experience .timeline ul li div {
+    width: 250px;
+  }
+  #experience .timeline ul li:nth-child(even) #e-div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+@media screen and (max-width: 600px) {
+  #experience .timeline ul li {
+    margin-left: 20px;
+  }
+  #experience .timeline ul li #e-div {
+    width: calc(100vw - 91px);
+  }
+  #experience .timeline ul li:nth-child(even) #e-div {
+    left: 45px;
+  }
+  #experience .timeline ul li:nth-child(even) #e-div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
 }
 
-@keyframes circleScaling {
-  0% {
-    transform: scale(0);
-  }
-  80% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /* Contact Section */
 #contact {
   padding: 120px 0 60px 0;
@@ -1098,15 +1180,49 @@ label {
   margin: 0 20px;
 }
 
-#contact .social i.fa {
-  font-size: 26px;
-  padding: 4px;
-  color: #343b42;
-  transition: all 0.3s;
+#contact .social {
+  background: rgba(204, 204, 204, 0.6);
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
+  margin-top: 80px;
 }
 
-#contact .social i.fa:hover {
-  color: #fff;
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#contact .social {
+  font-size: 40px;
+}
+#contact .social .fab {
+  transition: all 0.5s;
+}
+#contact .social .fa-facebook-square {
+  color: #3b5998;
+}
+#contact .social .fa-linkedin {
+  color: #0976b4;
+}
+#contact .social .fa-twitter-square {
+  color: #55acee;
+}
+#contact .social .fa-tumblr-square {
+  color: #35465c;
+}
+#contact .social .fa-youtube-square {
+  color: #e52d27;
+}
+#contact .social .fa-github-square {
+  color: #333;
+}
+#contact .social .fa-instagram {
+  color: #3f729b;
+}
+
+#contact .social i.fab:hover {
+  color: #fff000;
 }
 
 .btn:active,
