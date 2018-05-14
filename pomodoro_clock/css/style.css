@@ -98,4 +98,22 @@ p {
   margin-bottom: 20px;
 }
 
+#footer {
+  position: relative;
+  margin-top: 1200px;
+  font-size: 25px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+}
+#footer a {
+  text-decoration: none;
+  color: #0b60a5;
+}
+#footer a:hover {
+  color: #43b0ef;
+}
+
 /*# sourceMappingURL=style.css.map */

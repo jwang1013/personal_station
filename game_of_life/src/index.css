@@ -9,6 +9,8 @@ body {
 header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background: grey;
   width: 100%;
   padding: 5px;
@@ -181,6 +183,24 @@ h3 {
 
 .active {
   background: #821e28;
+}
+
+#footer {
+  position: relative;
+  margin-top: 500px;
+  font-size: 25px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+}
+#footer a {
+  text-decoration: none;
+  color: #0b60a5;
+}
+#footer a:hover {
+  color: #43b0ef;
 }
 
 /*# sourceMappingURL=index.css.map */

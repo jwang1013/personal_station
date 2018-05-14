@@ -9,7 +9,9 @@ body {
 
 header {
 	position: fixed;
-	top: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 	background: grey;
 	width: 100%;
 	padding: 5px;
@@ -182,3 +184,22 @@ h3 {
 .active {
     background: rgba(130, 30, 40, 1);
 }
+
+#footer {
+  position: relative;
+  margin-top: 500px;
+  font-size: 25px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+  a{
+    text-decoration: none;
+    color: #0b60a5;
+    &:hover{
+      color: #43b0ef;
+    }
+  }
+ }
+ 

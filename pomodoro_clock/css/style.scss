@@ -83,3 +83,21 @@ body{
     justify-content: center;
     margin-bottom: 20px;
   }
+
+  #footer {
+    position: relative;
+    margin-top: 1200px;
+    font-size: 25px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    a{
+      text-decoration: none;
+      color: #0b60a5;
+      &:hover{
+        color: #43b0ef;
+      }
+    }
+  }
